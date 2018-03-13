@@ -20,7 +20,7 @@
 [5. Sử dụng cấp phát tĩnh và động ](#capphat)
 
 
-<a name="kieucautrucstruct,enum"></a>
+<a name="kieucautrucstruct,enum"> 
 
 ### 1. Kiểu cấu trúc struct, enum 
 
@@ -53,19 +53,16 @@ b. enum
 
 - Enum là từ khá dùng để khai báo một kiểu liệt kê (Enumeration). Kiểu liệt kê là một tập hợp các hằng số do người dùng tự định nghĩa. Nói cách khác là một kiểu dữ liệu đặc biệt được dùng để định nghĩa một mối quan hệ thứ tự cho một tập hơp hữu hãn các tên </ul>
 
-<l>Đặc điểm của enum:
-</li>
+Đặc điểm của enum:
+Là một kiểu dẽ liệu tham 
 
-<li>Là một kiểu dẽ liệu tham trị </li>
+Enum không được phép kế thừa
 
-<li>Enum không được phép kế thừa</li>
-
-<li> Khai báo và sử dụng:
-</li>
-<li>Cú pháp: `enum<tên enum>{danh sách các biểu tượng hằng}`</li>
+Khai báo và sử dụng:
+Cú pháp: `enum<tên enum>{danh sách các biểu tượng hằng}`
 
 
-<a name="cautruccontro"></a>
+<a name="cautruccontro"> 
 
 
 ### 2. Cấu trúc con trỏ 
@@ -78,7 +75,7 @@ c. Định nghĩa kiểu mới bằng typedef
 
 Cú pháp: `Typedef<kiểu đã có><tên kiểu mới>`
 
-<a name="hamtrencautruc"></a>
+<a name="hamtrencautruc"> 
 
 ### 3. Hàm trên cấu trúc
 
@@ -105,7 +102,7 @@ Khác với stack, danh sách liên kết đơn cuxgn là một kiểu danh sác
 
 Về cơ bản nó giống với danh sách liên kết đơn  chỉ khác là chỗ ở mỗi nút nó có thêm con trỏ prev để trỏ tới phần tử trước nó trong danh sách liên kết kép thay vif chỉ có mỗi next đối với danh sách liên kết đơn.
 
-<a name="sudungcapphattinhdong"></a>
+<a name="sudungcapphattinhdong"> 
 
 ### 5 Sử dụng cấp phát tĩnh và động 
 - Bộ nhớ cấp phát tĩnh là bộ nhớ được HĐH cấp phát cho tiến trình ngay khi khởi tạo nó. Kích thước cố định và biết trước.</ul> 
