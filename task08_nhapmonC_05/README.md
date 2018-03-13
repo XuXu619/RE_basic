@@ -2,7 +2,7 @@
 
 > Tài liệu tham khảo:  http://bit.ly/2eFUang
 >
-> Người thực hiện: XuXu
+> Người thực hiện: **XuXu**
 >
 > Thực hiện lần cuối: **10/03/2017**
 >
@@ -105,6 +105,7 @@ Về cơ bản nó giống với danh sách liên kết đơn  chỉ khác là c
 <a name="sudungcapphattinhdong"> 
 
 ### 5 Sử dụng cấp phát tĩnh và động
+
 Bộ nhớ cấp phát tĩnh là bộ nhớ được HĐH cấp phát cho tiến trình ngay khi khởi tạo nó. Kích thước cố định và biết trước.
 Bộ nhớ cấp phát động thì được HĐH cấp phát cho tiến trình trong quá trình nó hoạt động, tùy theo nhu cầu của tiến trình, kích thước thay đổi và không biết trước.
 
