@@ -9,11 +9,11 @@
 
 ### Menu
 
-[1. Kiểu cấu trúc struct, enum](#struct)
+[1. Kiểu cấu trúc struct, enum](#kieucautrucstruct,enum)
 
-[2. Cấu trúc con trỏ](#cautruc)
+[2. Cấu trúc con trỏ](#cautruccontro)
 
-[3. Hàm trên các cấu trúc](#ham) 
+[3. Hàm trên các cấu trúc](#hamtr) 
 
 [4. Danh sách liên kết ( 1 chiều, 2 chiều)](#danhsachlienket) 
 
@@ -104,9 +104,9 @@ Về cơ bản nó giống với danh sách liên kết đơn  chỉ khác là c
 
 <a name="sudungcapphattinhdong"> 
 
-### 5 Sử dụng cấp phát tĩnh và động 
-- Bộ nhớ cấp phát tĩnh là bộ nhớ được HĐH cấp phát cho tiến trình ngay khi khởi tạo nó. Kích thước cố định và biết trước.</ul> 
-- Bộ nhớ cấp phát động thì được HĐH cấp phát cho tiến trình trong quá trình nó hoạt động, tùy theo nhu cầu của tiến trình, kích thước thay đổi và không biết trước.</ul>
+### 5 Sử dụng cấp phát tĩnh và động
+Bộ nhớ cấp phát tĩnh là bộ nhớ được HĐH cấp phát cho tiến trình ngay khi khởi tạo nó. Kích thước cố định và biết trước.
+Bộ nhớ cấp phát động thì được HĐH cấp phát cho tiến trình trong quá trình nó hoạt động, tùy theo nhu cầu của tiến trình, kích thước thay đổi và không biết trước.
 
 
 
