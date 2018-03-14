@@ -36,7 +36,7 @@ a. Định nghĩa và khai báo
  - Về mặt ngữ pháp điều này hoàn toàn giống như việc khai báo các biến và các mảng. Khi kgai báo một biến cần chỉ ra kiểu và tên của nó.</ul> 
 
 
- - Kiểu cấu trúc khác mảng ở chỗ: các phần tử của mảng có cùng kiểu, trong khi các phần tử của cấu trúc có nhiều kiểu khác nhau. Như thws, một cấu trúc đơn giản có thể chứa các phần tử nguyên, các phần tử chấm động và các phần tử kí tự. Con trỏ, mảng và những kiểu cấu trúc khác cũng có thể được bao gồm như là những phần tử bên trong một cấu trúc.</ul> 
+ - Kiểu cấu trúc khác mảng ở chỗ: Các phần tử của mảng có cùng kiểu, trong khi các phần tử của cấu trúc có nhiều kiểu khác nhau. Như thws, một cấu trúc đơn giản có thể chứa các phần tử nguyên, các phần tử chấm động và các phần tử kí tự. Con trỏ, mảng và những kiểu cấu trúc khác cũng có thể được bao gồm như là những phần tử bên trong một cấu trúc.</ul> 
 
  - Khai báo biến: Cú pháp `struct< tên cấu trúc >< biến1 >< biến 2 > ....;`</li>
 
@@ -138,19 +138,23 @@ Mẫu 2.3 :
  - Truy xuất các trường của cấu trúc
 </ul> 
 
-<li> Truy xuất đơn giản </li>
+ - Truy xuất đơn giản </li>
 
 Biến cấu trúc: `<biến cấu trúc >.<biến thành phần>;`
 
 biến con trỏ: `<biến con trỏ>a<biến thành phần>;`
 
-<li> Truy xuất phức tạp </li>
+ - Truy xuất phức tạp </li>
 
 Sử dụng đối với các cấu trúc lồng nhau:
 
-Cú pháp : `<biến cấu trúc>.<biến cấu trúc>.<biến thành phần>;`
+Cú pháp :
 
-Hoặc `<biến cấu trúc >...<biến cấu trúc>.<biến thành phần>;`
+ `<biến cấu trúc>.<biến cấu trúc>.<biến thành phần>;`
+
+Hoặc
+
+ `<biến cấu trúc >...<biến cấu trúc>.<biến thành phần>;`
 
 b. enum
 
