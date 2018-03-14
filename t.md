@@ -98,7 +98,8 @@ Mẫu 2.3 :
 ```c struct
 {
 	các thành phần cảu cấu trúc
-} danh sách tên cấu trúc;```
+} danh sách tên cấu trúc;
+```
 
 
 Ví dụ 2.5: Các cấu trúc ngay_di và ngay_den trong ví dụ 2.3 được khai báo theo cách:
@@ -108,7 +109,8 @@ Ví dụ 2.5: Các cấu trúc ngay_di và ngay_den trong ví dụ 2.3 được 
 	int ngay_thu;
 	char ten_thang[10];
 	int nam;
-} ngay_di, ngay_den;``` 
+} ngay_di, ngay_den;
+``` 
 
 
 
