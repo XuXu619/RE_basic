@@ -33,15 +33,15 @@
  - Định nghĩa: Dữ liệu cấu trúc là một kiểu dữ liệu bao gồm nhiều thành phần có kiểu khác nhau, mỗi thành phân được gọi là một trường (field)</ul> 
 
 
- - Về mặt ngữ pháp điều này hoàn toàn giống như việc khai báo các biến và các mảng. Khi kgai báo một biến cần chỉ ra kiểu và tên của nó.</ul> 
+* Về mặt ngữ pháp điều này hoàn toàn giống như việc khai báo các biến và các mảng. Khi kgai báo một biến cần chỉ ra kiểu và tên của nó.</ul> 
 
 
- - Kiểu cấu trúc khác mảng ở chỗ: Các phần tử của mảng có cùng kiểu, trong khi các phần tử của cấu trúc có nhiều kiểu khác nhau. Như thws, một cấu trúc đơn giản có thể chứa các phần tử nguyên, các phần tử chấm động và các phần tử kí tự. Con trỏ, mảng và những kiểu cấu trúc khác cũng có thể được bao gồm như là những phần tử bên trong một cấu trúc.</ul> 
+* Kiểu cấu trúc khác mảng ở chỗ: Các phần tử của mảng có cùng kiểu, trong khi các phần tử của cấu trúc có nhiều kiểu khác nhau. Như thws, một cấu trúc đơn giản có thể chứa các phần tử nguyên, các phần tử chấm động và các phần tử kí tự. Con trỏ, mảng và những kiểu cấu trúc khác cũng có thể được bao gồm như là những phần tử bên trong một cấu trúc. 
 
- - Khai báo biến: Cú pháp `struct< tên cấu trúc >< biến1 >< biến 2 > ....;`</li>
+* Khai báo biến: Cú pháp `struct< tên cấu trúc >< biến1 >< biến 2 > ....;` 
 
 
- - Ví dụ khai báo:</ul> 
+* Ví dụ khai báo: 
 
         float x, y;
 
@@ -129,7 +129,7 @@ Mẫu 2.3 :
  - Cũng cần nói thêm sự khác nhau giữa mẫu 2.2 và mẫu 2.3. Điều ngày sẽ trở nên hoàn toàn rõ ràng khi so sánh ví dụ 2.3 và ví dụ 2.5 ở ví dụ 2.3 ngoài việc xây dựng được cấcc cấu trúc ngay_di, ngay_den ta còn cho ra đời được kiểu cấu trúc ngay. Kieẻu ngay có thể sử dụng để khai báo ở các cấu trúc khác. Ỏ ví dụ 2.4 ta chỉ đặt được mục đích đầu của ví dụ 2.3.</ul> 
 
 
- - Chú ý: Nếu dùng typedef để định nghĩa kiểu cấu trúc, thì khi khai báo ta chỉ cần dùng tên kiểu (bỏ từ khoá struct). Ví dụ như kiểu cấu trúc ngay dược định như trong chú ý 1.1 của 2.1 thì các cấu trúc ngay_di và ngay_den trong ví dụ 2.1 có thể khai báo như sau:</li>  
+* Chú ý: Nếu dùng typedef để định nghĩa kiểu cấu trúc, thì khi khai báo ta chỉ cần dùng tên kiểu (bỏ từ khoá struct). Ví dụ như kiểu cấu trúc ngay dược định như trong chú ý 1.1 của 2.1 thì các cấu trúc ngay_di và ngay_den trong ví dụ 2.1 có thể khai báo như sau: 
 
 
 `ngay ngay_di, ngay_den;`
@@ -151,7 +151,7 @@ tên_cấu_trúc.tên cấu trúc.tên_cấu_trúc.tên_thành_phần
 
 - Ví dụ 3.1 Ta xét vài phép toán trên các thành phần của cấu trúc nguoi_a và nguoi_b (xem ví dụ 2.4).</ul> 
 
-- Câu lệnh:</ul> 
+* Câu lệnh: 
 
 	printf("%s",nguoi_a.ten);
 
@@ -171,7 +171,7 @@ Thì biến s sẽ nhận được tổng bậc lương của nguoi_a và nguoi_
 
 sẽ cho lên màn hình năm sinh của nguoi_a.
 
-- Câu lệnh:</ul>
+- Câu lệnh: </ul> 
 
 
 	printf("%d",nguoi_b.ngay_vao_co_quan.nam);
@@ -225,7 +225,7 @@ scanf("%d", &p.nam);
         Dộ dài của mỗi field không quá 16 bit.
         Khi muốn bỏ qua một số bit thì ta bỏ trống tên trường.
 
-- Ví dụ Khi viết:<ul>
+* Ví dụ Khi viết: 
 
 
 ```c int:8;
@@ -251,7 +251,7 @@ mà phải dùng thủ thật sau:
         Tiết kiệm bộ nhớ.
         Dùng trong union để lấy ra các bit của một từ.
 
-- Ví dụ:</ul>
+* Ví dụ: 
 
 
 ```c union{
@@ -300,10 +300,10 @@ cho ta hai biến nguyên a, b và mảng nguyên c.
         Hai biến mảng cấu trúc nguoi_a và nguoi_b;
         Hai mảng cấu trúc to_1 và to_2;
 
-- Mảng to_1 có 10 phần tử và mảng to_2 có 20 phần tử. Mỗi phần tử của chúng là một cấu trúc kiểu nhan_cong.</ul>
+* Mảng to_1 có 10 phần tử và mảng to_2 có 20 phần tử. Mỗi phần tử của chúng là một cấu trúc kiểu nhan_cong. 
 
 
-- Ví dụ 5.2 : Đoạn chương trình sau sẽ tính tổng lương của 10 nguoi ở to_1.</ul>
+* Ví dụ 5.2 : Đoạn chương trình sau sẽ tính tổng lương của 10 nguoi ở to_1. 
 
 
 ```c double s=0;
@@ -320,7 +320,7 @@ for (i=0; i<10;++i)
 - Có thể khởi đầu cho cấu trúc ngoài, cấu trúc tĩnh, mảng cấu trúc ngoài và mảng cấu trúc tĩnh bằng cách viết vào sau khai báo của chúng một danh sách các giá trị cho các thành phần.</ul>
 
 
-- Ví dụ 6.1 Đoạn chương trình</ul>
+* Ví dụ 6.1 Đoạn chương trình 
 
 
 ```c struct date{
@@ -355,7 +355,7 @@ struct date dd = {4,7,1990,120,"December"};
 - Xác định và khởi đầu một mảng cấu trúc có tên là year bao gồm 12 phần tử. Vì mỗi phần tử của mảng lại là một cấu trúc (kiểu month) nên để khởi đầu cho mảng year, một cách hợp lý hơn cả là sử dụng 12 bộ khởi đầu cho 12 cấu trúc tương ứng.</ul>
 
 
-- Chẳng hạn: {1,"january"} là bộ khởi đầu cho phần tử thứ nhất của mảng year.Cũng như đối với các mảng khác, khi khởi đầu một mảng cấu trúc ngoài (hoặc tĩnh) ta không cần chỉ ra kích cỡ của nó. Lúc đó kích cỡ của các mảng được khởi đầu sẽ được xác định một cách chính xác (khi dịch chương trình) thông qua số các bộ khởi đầu. Như vậy, đoạn chương trình trong ví dụ 6.2 có thể viết một cách khác như sau:</ul>
+* Chẳng hạn: {1,"january"} là bộ khởi đầu cho phần tử thứ nhất của mảng year.Cũng như đối với các mảng khác, khi khởi đầu một mảng cấu trúc ngoài (hoặc tĩnh) ta không cần chỉ ra kích cỡ của nó. Lúc đó kích cỡ của các mảng được khởi đầu sẽ được xác định một cách chính xác (khi dịch chương trình) thông qua số các bộ khởi đầu. Như vậy, đoạn chương trình trong ví dụ 6.2 có thể viết một cách khác như sau: 
 
 
 ```c struct month
