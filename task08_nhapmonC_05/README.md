@@ -21,14 +21,13 @@
 
 	[1.5 Mảng cấu trúc]
 
-[2. Cấu trúc con trỏ](#cautruccontro) 
+[2. Con trỏ cấu trúc ](#cautruccontro) 
 
-[3. Hàm trên các cấu trúc](#hamtrencaccautruc)
-
+[3. Hàm trên cấu trúc](#hamtrencautruc)
 
 [4. Danh sách liên kết ( 1 chiều, 2 chiều)](#danhsachlienket) 
 
-[5. Sử dụng cấp phát tĩnh và động ](#capphattinhvadong) 
+[5. Sử dụng cấp phát tĩnh động ](#capphattinhdong) 
 
 
 
@@ -335,7 +334,7 @@ for (i=0; i<10;++i)
 
 	&to_1[i].bac_luong (nếu kiểu của bac_luong là nguyen thì được);
 
-####1.6 Khởi đầu cho một cấu trúc
+#### 1.6 Khởi đầu cho một cấu trúc
 
 - Có thể khởi đầu cho cấu trúc ngoài, cấu trúc tĩnh, mảng cấu trúc ngoài và mảng cấu trúc tĩnh bằng cách viết vào sau khai báo của chúng một danh sách các giá trị cho các thành phần.</ul>
 
@@ -424,7 +423,7 @@ d[10] = {
 - Chỉ hai phần tử đầu mảng cấu trúc d được khởi đầu. Trong ví dụ này n = 10 và m = 2;</ul>
 
 
-####1.7 Phép gán cấu trúc:
+#### 1.7 Phép gán cấu trúc:
 
 * Có thể thục hiện phép gán trên ác biến và phần tử mảng cấu trúc cùng kiểu như sau:
 
@@ -543,7 +542,7 @@ struct nhan_cong
 
 <a name="hamtrencautruc"> 
 
-### 3. Hàm trên các cấu trúc
+### 3. Hàm trên cấu trúc
 
 * Đối của hàm có thể là:
 	Biến cấu trúc: Khi đó tham số thực tương ứng là một giá trị cấu trúc.
@@ -599,7 +598,7 @@ struct nhan_cong
 <a name="sudungcapphattinhdong"> 
 
 
-### 5. Sử dụng cấp phát tĩnh và động 
+### 5. Sử dụng cấp phát tĩnh động 
 
 * Bộ nhớ cấp phát tĩnh là bộ nhớ được HĐH cấp phát cho tiến trình ngay khi khởi tạo nó. Kích thước cố định và biết trước.
 
