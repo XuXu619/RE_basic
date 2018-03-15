@@ -27,7 +27,7 @@
 
 Để lưu trữ và xử lý thông tin trong máy tính ta có các biến và các mảng. Mỗi biến chứa một giá trị. Mảng có thẻ xem là tập hợp nhiều biến có cùng một kiểu giá trị và được biểu thị bằng một cái tên. Cấu trúc có thể xem như một sự mở rộng của các khái niệm biến và mảng, nó cho phép lưu trữ và xử lý các dạng thông tin phức tập hơn, Cấu trúc là một tập hợp các biến, các mảng và được biểu thị bởi một tên duy nhất. Khái niệm cấu trúc trong C có những nét tương tự như khái niệm bản ghi (record) trong Pascal hay Foxpro. Một ví dụ truyền thống về cấu trúc là phiếu ghi lương: Mỗi công nhân được miêu tả bởi một tập hợp các thuộc tính như tên, địa chỉ, ngày sinh, bật lương, ... Một vài trong thuộc này lại có thẻ là cấu trúc: Tên có thể có nhiều thành phần, địa chỉ và thậm chí ngày sinh cũng vậy.
 
-a. Định nghĩa và khai báo
+1.1 Định nghĩa và khai báo
 
 
  - Định nghĩa: Dữ liệu cấu trúc là một kiểu dữ liệu bao gồm nhiều thành phần có kiểu khác nhau, mỗi thành phân được gọi là một trường (field)</ul> 
@@ -267,6 +267,8 @@ unsigned:7;
 unsigned n3:8;
 } f;
 } u;
+```
+
 
 - Khi đó:</li>
 
@@ -379,7 +381,8 @@ struct date dd = {4,7,1990,120,"December"};
 
 <li>Nếu kích thước của mảng cấu trúc cần khởi đầu đã được khai báo là n thì số bộ khởi đầu (m) cần không vượt quá n. Mỗi bộ khởi đầu cho giá trị của một phần tử mảng cấu trúc. Khi m < n thì chỉ có m phần tử đầu của mảng được khởi đầu, (n - m) phần tử còn lại nhận giá trị 0.</li>
 
-<li>Vởiệc khi đầu được thực hiện một lần khi dịch chương trình:</li>
+<li>Vởiệc khi đầu được thực hiện một lần khi dịch chương trình:</li></ul>
+
 
 
 - Ví dụ khi dịch đoạn chương trình</li>
