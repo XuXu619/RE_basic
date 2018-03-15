@@ -406,17 +406,17 @@ d[10] = {
 
 ###2.7 Phép gán cấu trúc:
 
-- Có thể thục hiện phép gán trên ác biến và phần tử mảng cấu trúc cùng kiểu như sau:</ul>
+* Có thể thục hiện phép gán trên ác biến và phần tử mảng cấu trúc cùng kiểu như sau:</ul>
 
 	Gán hai biết (cấu trúc) cho nhau.
 	Gán biến cho phần tử mảng (cấu trúc).
 	Gán phần tử mảng cho biến.
 	Gán hai phần tử mảng cho nhau.
 
-- Mỗi phép gán nói trên tương đương với một dãy phép gán các thành phần tương ứng.</UL>
+* Mỗi phép gán nói trên tương đương với một dãy phép gán các thành phần tương ứng.
 
 
-- Đoạn chương trình sau minh hoạ cách dùng phép gán cấu trúc để sắp xếp n thí sinh theo thứ tự giảm của tổng diểm.</Li>
+* Đoạn chương trình sau minh hoạ cách dùng phép gán cấu trúc để sắp xếp n thí sinh theo thứ tự giảm của tổng diểm. 
 
 
 ```c struct thi_sinh
@@ -436,17 +436,18 @@ for (j = i + 1; j <= n; ++j)
 ```
 
 
- - Truy xuất đơn giản </li>
+* Truy xuất đơn giản 
 
 Biến cấu trúc: `<biến cấu trúc >.<biến thành phần>;`
 
 biến con trỏ: `<biến con trỏ>a<biến thành phần>;`
 
- - Truy xuất phức tạp </li>
+
+* Truy xuất phức tạp 
 
 Sử dụng đối với các cấu trúc lồng nhau:
 
-Cú pháp :
+* Cú pháp :
 
  `<biến cấu trúc>.<biến cấu trúc>.<biến thành phần>;`
 
@@ -456,7 +457,7 @@ Hoặc
 
 b. enum
 
-- Enum là từ khá dùng để khai báo một kiểu liệt kê (Enumeration). Kiểu liệt kê là một tập hợp các hằng số do người dùng tự định nghĩa. Nói cách khác là một kiểu dữ liệu đặc biệt được dùng để định nghĩa một mối quan hệ thứ tự cho một tập hơp hữu hãn các tên </ul>
+* Enum là từ khá dùng để khai báo một kiểu liệt kê (Enumeration). Kiểu liệt kê là một tập hợp các hằng số do người dùng tự định nghĩa. Nói cách khác là một kiểu dữ liệu đặc biệt được dùng để định nghĩa một mối quan hệ thứ tự cho một tập hơp hữu hãn các tên  
 
 <l>Đặc điểm của enum:
 </li>
@@ -477,11 +478,11 @@ b. enum
 
 #### 4.1 Danh sách liên kết đơn
 
-Khác với stack, danh sách liên kết đơn cuxgn là một kiểu danh sách tuyến tính gồm các phần tử vào lần lượt theo thứ tự tuy nhiên nó khác stack với queue ở chỗ là nó được cấp phát trong bộ nhớ vở các phần tử rời rạc nhau, không nằm kề nhau tuy nhiên giữa các phần tử trước thì có một liên kết đến phần tử sau nó.
+* Khác với stack, danh sách liên kết đơn cuxgn là một kiểu danh sách tuyến tính gồm các phần tử vào lần lượt theo thứ tự tuy nhiên nó khác stack với queue ở chỗ là nó được cấp phát trong bộ nhớ vở các phần tử rời rạc nhau, không nằm kề nhau tuy nhiên giữa các phần tử trước thì có một liên kết đến phần tử sau nó.
 
 #### 4.2 Danh sách liên kết kép 
 
-Về cơ bản nó giống với danh sách liên kết đơn  chỉ khác là chỗ ở mỗi nút nó có thêm con trỏ prev để trỏ tới phần tử trước nó trong danh sách liên kết kép thay vif chỉ có mỗi next đối với danh sách liên kết đơn.
+* Về cơ bản nó giống với danh sách liên kết đơn  chỉ khác là chỗ ở mỗi nút nó có thêm con trỏ prev để trỏ tới phần tử trước nó trong danh sách liên kết kép thay vif chỉ có mỗi next đối với danh sách liên kết đơn.
 
 <a name="sudungcapphattinhdong"></a>
 
