@@ -9,28 +9,32 @@
 
 ### Menu
 
-[1. Kiểu cấu trúc struct, enum](#struct)
+[1. Kiểu cấu trúc struct, enum](#kieucautrucstruct,enum) 
 
-	[1.1 Định nghĩa và khai báo](#dinhnghiavakhaibao)
+	[1.1 Định nghĩa và khai báo]
 
-	[1.2 Khai báo theo một kiểu cấu trúc đã định nghĩa](#khaibao)
+	[1.2 Khai báo theo một kiểu cấu trúc đã định nghĩa]
 
-	[1.3 Truy cập nhanh tới phần tử và cấu trúc](#truycap)
+	[1.3 Truy cập nhanh tới phần tử và cấu trúc]
 	
-	[1.4 Thành phần kiểu FILD (nhóm BIT)](#tp)
+	[1.4 Thành phần kiểu FILD (nhóm BIT)]
 
-	[1.5 Mảng cấu trúc](#mangcautruc)
+	[1.5 Mảng cấu trúc]
 
-[2. Cấu trúc con trỏ](#cautruc)
+[2. Cấu trúc con trỏ](#cautruccontro) 
 
-[3. Hàm trên các cấu trúc](#ham) 
+[3. Hàm trên các cấu trúc](#hamtrencaccautruc)
+
 
 [4. Danh sách liên kết ( 1 chiều, 2 chiều)](#danhsachlienket) 
 
-[5. Sử dụng cấp phát tĩnh và động ](#capphat)
+[5. Sử dụng cấp phát tĩnh và động ](#capphattinhvadong) 
+
+
 
 
 <a name="kieucautrucstruct,enum"> 
+
 
 ### 1. Kiểu cấu trúc struct, enum 
 
@@ -451,9 +455,12 @@ for (j = i + 1; j <= n; ++j)
 	}
 ```
 
-<a name="controcautruc">
 
-###2 Con trỏ cấu trúc và địa chỉ cấu trúc
+
+<a name="controcautruc">
+	
+
+###2. Con trỏ cấu trúc và địa chỉ cấu trúc
 
 
 
@@ -489,7 +496,7 @@ struct nhan_cong
         p2 = &ds[2]; /*Gửi địa chỉ ds[2] vào p2 */
         p = ds; /*Gửi địa chỉ ds[0] vào p */
 
-2.8.2 Truy nhập thông qua con trỏ: Có thể truy nhập đến các phàn thông qua con trỏ theo một trong hai cách sau:
+####2.1 Truy nhập thông qua con trỏ: Có thể truy nhập đến các phàn thông qua con trỏ theo một trong hai cách sau:
 
 * Cách 1:
 
@@ -507,7 +514,7 @@ struct nhan_cong
         nc1.ngay_sinh.nam và p1-> ngay_sinh.nam
         ds[2].ngay_sinh.ten_thang và (p2*).ngay_sinh.ten_thang;
 
-2.8.3 Dùng phép gán thông qua con trỏ.
+####2.2 Dùng phép gán thông qua con trỏ.
 
 * Giả thiết đã có các lệnh:
 
@@ -522,7 +529,7 @@ struct nhan_cong
 
 * Tương đương với: `ds[4] = *p1; *p2 = nc2;
 
-2.8.4 Phép cộng địa chỉ:
+####2.3 Phép cộng địa chỉ:
 
 * Sau phép gán:
 
@@ -536,7 +543,7 @@ struct nhan_cong
 
 <a name="hamtrencautruc"> 
 
-###3 Hàm trên các cấu trúc:
+###3. Hàm trên các cấu trúc:
 
 * Đối của hàm có thể là:
 	Biến cấu trúc: Khi đó tham số thực tương ứng là một giá trị cấu trúc.
@@ -587,9 +594,12 @@ struct nhan_cong
 
 * Về cơ bản nó giống với danh sách liên kết đơn  chỉ khác là chỗ ở mỗi nút nó có thêm con trỏ prev để trỏ tới phần tử trước nó trong danh sách liên kết kép thay vif chỉ có mỗi next đối với danh sách liên kết đơn.
 
+
+
 <a name="sudungcapphattinhdong"> 
 
-### 5 Sử dụng cấp phát tĩnh và động 
+
+### 5. Sử dụng cấp phát tĩnh và động 
 * Bộ nhớ cấp phát tĩnh là bộ nhớ được HĐH cấp phát cho tiến trình ngay khi khởi tạo nó. Kích thước cố định và biết trước.
 
 
