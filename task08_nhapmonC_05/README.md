@@ -30,10 +30,10 @@
 1.1 Định nghĩa và khai báo
 
 
- - Định nghĩa: Dữ liệu cấu trúc là một kiểu dữ liệu bao gồm nhiều thành phần có kiểu khác nhau, mỗi thành phân được gọi là một trường (field)</ul> 
+ - Định nghĩa: Dữ liệu cấu trúc là một kiểu dữ liệu bao gồm nhiều thành phần có kiểu khác nhau, mỗi thành phân được gọi là một trường (field) 
 
 
-* Về mặt ngữ pháp điều này hoàn toàn giống như việc khai báo các biến và các mảng. Khi kgai báo một biến cần chỉ ra kiểu và tên của nó.</ul> 
+* Về mặt ngữ pháp điều này hoàn toàn giống như việc khai báo các biến và các mảng. Khi kgai báo một biến cần chỉ ra kiểu và tên của nó. 
 
 
 * Kiểu cấu trúc khác mảng ở chỗ: Các phần tử của mảng có cùng kiểu, trong khi các phần tử của cấu trúc có nhiều kiểu khác nhau. Như thws, một cấu trúc đơn giản có thể chứa các phần tử nguyên, các phần tử chấm động và các phần tử kí tự. Con trỏ, mảng và những kiểu cấu trúc khác cũng có thể được bao gồm như là những phần tử bên trong một cấu trúc. 
@@ -64,7 +64,7 @@ Một cách tổng quát, việc khai báo cấu trúc được thực hiện th
  - Sau đây là một vài điều cần lưu ý:
 <ul> 
 
- - Nhận xét 2.1: Các biến cấu trúc được khai báo theo mẫu trên sẽ được cấp phát bộ nhớ một cách đầy đủ cho tất cả các thành phàn của nó.</ul> 
+ - Nhận xét 2.1: Các biến cấu trúc được khai báo theo mẫu trên sẽ được cấp phát bộ nhớ một cách đầy đủ cho tất cả các thành phàn của nó.<ul> 
 
  - Nhận xét 2.2: Việc khai báo có thể thực hiện đồng thời với việc dịnh nghĩa kiểu cấu trúc. Muốn vậy chỉ cần đặt danh sách tên biến cấu trúc cần khai báo vào sau } cuối cùng trong mẫu 1.1</ul> 
 
