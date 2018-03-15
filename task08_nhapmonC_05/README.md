@@ -2,7 +2,7 @@
 
 > Tài liệu tham khảo:  http://bit.ly/2eFUang
 >
-> Người thực hiện: XuXu
+> Người thực hiện: **XuXu**
 >
 > Thực hiện lần cuối: **10/03/2017**
 >
@@ -10,6 +10,16 @@
 ### Menu
 
 [1. Kiểu cấu trúc struct, enum](#struct)
+
+	[1.1 Định nghĩa và khai báo](#dinhnghia) 
+
+	[1.2 Khai báo theo một kiểu cấu trúc đã định nghĩa](#khaibao)
+
+	[1.3 Truy cập nhanh tới phần tử và cấu trúc](#truycap)
+	
+	[1.4 Thành phần kiểu FILD (nhóm BIT)](#tp)
+
+	[1.5 Mảng cấu trúc](#mangcautruc)
 
 [2. Cấu trúc con trỏ](#cautruc)
 
@@ -27,7 +37,7 @@
 
 Để lưu trữ và xử lý thông tin trong máy tính ta có các biến và các mảng. Mỗi biến chứa một giá trị. Mảng có thẻ xem là tập hợp nhiều biến có cùng một kiểu giá trị và được biểu thị bằng một cái tên. Cấu trúc có thể xem như một sự mở rộng của các khái niệm biến và mảng, nó cho phép lưu trữ và xử lý các dạng thông tin phức tập hơn, Cấu trúc là một tập hợp các biến, các mảng và được biểu thị bởi một tên duy nhất. Khái niệm cấu trúc trong C có những nét tương tự như khái niệm bản ghi (record) trong Pascal hay Foxpro. Một ví dụ truyền thống về cấu trúc là phiếu ghi lương: Mỗi công nhân được miêu tả bởi một tập hợp các thuộc tính như tên, địa chỉ, ngày sinh, bật lương, ... Một vài trong thuộc này lại có thẻ là cấu trúc: Tên có thể có nhiều thành phần, địa chỉ và thậm chí ngày sinh cũng vậy.
 
-1.1 Định nghĩa và khai báo
+#### 1.1 Định nghĩa và khai báo
 
 
  - Định nghĩa: Dữ liệu cấu trúc là một kiểu dữ liệu bao gồm nhiều thành phần có kiểu khác nhau, mỗi thành phân được gọi là một trường (field) 
@@ -37,6 +47,8 @@
 
 
 * Kiểu cấu trúc khác mảng ở chỗ: Các phần tử của mảng có cùng kiểu, trong khi các phần tử của cấu trúc có nhiều kiểu khác nhau. Như thws, một cấu trúc đơn giản có thể chứa các phần tử nguyên, các phần tử chấm động và các phần tử kí tự. Con trỏ, mảng và những kiểu cấu trúc khác cũng có thể được bao gồm như là những phần tử bên trong một cấu trúc. 
+
+#### 1.2 Khai báo biến theo một kiểu cấu trúc đã định nghĩa:
 
 * Khai báo biến: Cú pháp `struct< tên cấu trúc >< biến1 >< biến 2 > ....;` 
 
@@ -134,6 +146,8 @@ Mẫu 2.3 :
 
 	ngay ngay_di, ngay_den;
 
+####1.3 Truy nhập đến các thành phần của cấu trúc
+
 
  - Truy xuất các trường của cấu trúc
 </ul> 
@@ -146,7 +160,7 @@ tên_cấu_trúc.tên cấu trúc.tên_cấu_trúc.tên_thành_phần
 ...
 ``` 
 
-- Các viết thứ nhất của mẫu 3.1 được sử dụng khi biến haowjc mảng là thnahf phần trực tiếp của một cấu trúc. Ví dụ biến ngay_thu, bién nam và mảng ten_thang là các thành phần trực tiếp của cấu trúc ngay_di (xem ví dụ 2.3). Mảng ten, mảng di_chi và biến bac_luong là các thành phần trực tiếp của cấu trúc nguoi_b (xem ví dụ 2.4). Các cách viết còn lại của mẫu 3.1 được sử dụng khi biến hoặc mảng là thành phần trực tiếp của một cauá tryúc mà bản thân cấu trúc này lại là thành phần của một cấu trúc lớn hơn. 
+- Các viết thứ nhất của mẫu 3.1 được sử dụng khi biến hoặc mảng là thành phần trực tiếp của một cấu trúc. Ví dụ biến ngay_thu, bién nam và mảng ten_thang là các thành phần trực tiếp của cấu trúc ngay_di (xem ví dụ 2.3). Mảng ten, mảng di_chi và biến bac_luong là các thành phần trực tiếp của cấu trúc nguoi_b (xem ví dụ 2.4). Các cách viết còn lại của mẫu 3.1 được sử dụng khi biến hoặc mảng là thành phần trực tiếp của một cauá tryúc mà bản thân cấu trúc này lại là thành phần của một cấu trúc lớn hơn. 
 </ul> 
 
 - Ví dụ 3.1 Ta xét vài phép toán trên các thành phần của cấu trúc nguoi_a và nguoi_b (xem ví dụ 2.4).</ul> 
@@ -205,7 +219,7 @@ nguoi_b.ngay_vao_co_quan.nam = x;
 scanf("%d", &p.nam);
 ```
 
-###2.4 Thành phần kiểu FIELD (Nhóm BIT)
+#### 1.4 Thành phần kiểu FIELD (Nhóm BIT)
 
 - Các thành phần nguyên (unsigned hoặc signed) với miền giá trị nhỏ (như tuổi biến thiên từ 1 đến 100) có thể khai báo kiểu nhóm bit theo mẫu sau:</li>
 
@@ -278,7 +292,8 @@ unsigned n3:8;
         u.f.n3 là byte cao của u.s.a2;
 
 
-###2.5 Mảng cấu trúc:
+
+####1.5 Mảng cấu trúc:
 
 
 - Khi sử dụng một kiểu giá trị (kiểu int chẳng hạn) ta có thể khai báo các biến và các mảng kiểu int. Ví dụ khai báo:</ul>
@@ -316,7 +331,7 @@ for (i=0; i<10;++i)
 
 	&to_1[i].bac_luong (nếu kiểu của bac_luong là nguyen thì được);
 
-###2.6 Khởi đầu cho một cấu trúc
+####1.6 Khởi đầu cho một cấu trúc
 
 - Có thể khởi đầu cho cấu trúc ngoài, cấu trúc tĩnh, mảng cấu trúc ngoài và mảng cấu trúc tĩnh bằng cách viết vào sau khai báo của chúng một danh sách các giá trị cho các thành phần.</ul>
 
@@ -405,7 +420,7 @@ d[10] = {
 - Chỉ hai phần tử đầu mảng cấu trúc d được khởi đầu. Trong ví dụ này n = 10 và m = 2;</ul>
 
 
-###2.7 Phép gán cấu trúc:
+####1.7 Phép gán cấu trúc:
 
 * Có thể thục hiện phép gán trên ác biến và phần tử mảng cấu trúc cùng kiểu như sau:
 
@@ -436,46 +451,128 @@ for (j = i + 1; j <= n; ++j)
 	}
 ```
 
+<a name="controcautruc">
 
-* Truy xuất đơn giản 
-
-Biến cấu trúc: 
-
-	<biến cấu trúc >.<biến thành phần>;
+###2 Con trỏ cấu trúc và địa chỉ cấu trúc
 
 
-biến con trỏ: 
-	
-	<biến con trỏ>a<biến thành phần>; 
+</ul>
 
 
-* Truy xuất phức tạp 
+* Xét các kiểu cấu trúc ngay va nhan_cong;
 
-Sử dụng đối với các cấu trúc lồng nhau:
+```c struct ngay
+{
+	int ngay_thu;
+	char ten_thang[10];
+	int nam;
+};
+struct nhan_cong
+{
+	char ten[15];
+	char dia_chi[20];
+	double bac_luong;
+	struct ngay ngay_sinh;
+	struct ngay ngay_vao_co_quan;
+};
+```
 
-* Cú pháp :
+* Khi đó con trỏ cấu trúc kiểu nhan_cong có tể được khai báo cùng với biến và mảng (cấu trúc) như sau:
 
-	<biến cấu trúc>.<biến cấu trúc>.<biến thành phần>;
+	struct nhan_cong *p, *p1, *p2, nc2, ds[100];
 
-Hoặc
+* Trong khai trên thì:
+	p, p1 và p2 là con trỏ cấu trúc.
+	nc1 và nc 2 là biến cấu trúc.
+	ds là mảng cấu trúc.
 
-	<biến cấu trúc >...<biến cấu trúc>.<biến thành phần>;
+* Con trỏ cấu trúc dùng để lưu trữ địa chỉ của biến cấu trúc và mảng cấu trúc, vì vậy các phép gán sau đây là hợp lệ:
+        p1 = &nc1; /*Gửi địa chỉ nc1 và p1 */
+        p2 = &ds[2]; /*Gửi địa chỉ ds[2] vào p2 */
+        p = ds; /*Gửi địa chỉ ds[0] vào p */
 
+2.8.2 Truy nhập thông qua con trỏ: Có thể truy nhập đến các phàn thông qua con trỏ theo một trong hai cách sau:
 
-b. enum
+* Cách 1:
 
-* Enum là từ khá dùng để khai báo một kiểu liệt kê (Enumeration). Kiểu liệt kê là một tập hợp các hằng số do người dùng tự định nghĩa. Nói cách khác là một kiểu dữ liệu đặc biệt được dùng để định nghĩa một mối quan hệ thứ tự cho một tập hơp hữu hãn các tên  
+	-tên_con_trỏ -> tên_thành_phần;
 
-<l>Đặc điểm của enum:
-</li>
+* Cách 2:
 
-<li>Là một kiểu dẽ liệu tham trị </li>
+	-(tên_con_trỏ).tên_thành_phần;
 
-<li>Enum không được phép kế thừa</li>
+  * Chẳng hạn, sau khi thự hiện các phép gán địa chỉ trong 8.1 thì các cách viết sau là tương đương:
+        nc1.ngay_sinh.nam và p1->ngay_sinh.nam
+        ds[2].ngay_sinh.ten_thang và (p2*).ngay_sinh.ten_thang;
 
-<li> Khai báo và sử dụng:
-</li>
-<li>Cú pháp: `enum<tên enum>{danh sách các biểu tượng hằng}`</li>
+  * Chẳng hạn, sau khi thực hiẹn các phép gán địa chỉ trong 8.1 thì các cách viết sau là tương đương:
+        nc1.ngay_sinh.nam và p1-> ngay_sinh.nam
+        ds[2].ngay_sinh.ten_thang và (p2*).ngay_sinh.ten_thang;
+
+2.8.3 Dùng phép gán thông qua con trỏ.
+
+* Giả thiết đã có các lệnh:
+
+	p1=&nc1; /*Gửi địa chỉ nc1 vào p1 */
+	p2 = &ds[2]; /*Gửi địa chỉ ds[2] vào p2 */
+
+* Khi đó trong các phép gán cấu trúc:
+	Có thể dùng *p1 thay cho nc1;
+	Có thể dùng *p2 thay cho ds[2];
+
+* Như vậy cách viết: ds[4] = nc1; ds[2] = nc2;
+
+* Tương đương với: `ds[4] = *p1; *p2 = nc2;
+
+2.8.4 Phép cộng địa chỉ:
+
+* Sau phép gán:
+
+	p = ds;
+	p2 = &ds[2];
+
+* Thì p trỏ tới ds[0] và p2 trỏ tới ds[2]. Ta có thể dùng các phép cộng, trừ địa chỉ để làm cho p và p2 trỏ tới thành phần bất kỳ nào khác. Ví dụ sau các câu lệnh:
+
+* p = p + 10; p2 = p2 - 2; thì p trỏ tới ds[10] còn p2 trỏ tới ds[0].
+
+<a name="hamtrencautruc"> 
+
+####3 Hàm trên các cấu trúc:
+
+* Đối của hàm có thể là:
+	Biến cấu trúc: Khi đó tham số thực tương ứng là một giá trị cấu trúc.
+        Con trỏ cấu trúc: Khi đó tham số thực tương ứng là địa chỉ của biến cấu trúc.
+        Mảng cấu trúc hình thức hoặc con trỏ cấu trúc: Khi đó tham số thực tương ứng là tên mảng cấu trúc.
+
+* Hàm có thể trả về giá trị:
+        Giá trị cấu trúc.
+        COn trỏ cấu trúc.
+
+* Vd:
+
+        VD 9.1 : Xét kiểu cấu trúc person gồm 3 thành phần
+            ht(họ tên) kiểu mảng char
+            ns (năm sinh) kiểu struct date
+            bl (bậc lương) kiểu float
+
+* Ta dựa vào 6 hàm thao trên kiểu person.
+
+* Hàm: person *ptim(char *ht, person h[], int n);
+
+* => Có tác dụng tìm trong danh sách n nhân viên lưu trong mảng h, người có tên cho trong ht. Hàm trả về con trỏ tới người tìm được haowjc trả về NULL nếu không tìm thấy
+
+* Hàm : person tim(char *ht, person h[], int n); => Cũng có tác dụng tìm kiếm như hàm trên, nhưng nó trả về một cấu trúc chứa thông tin người tìm được. Các thông tin này sẽ bằng không nếu không tìm thấy.
+
+* Hàm: void hv(person *p1, person *p2); => dùng để hoán vị hai cấu trúc.
+
+* Hàm: void sapxep(person *p, int n); => Có tác dụng sắp xếp n phần tử cấu trúc chứ trong p theo thứ tự tăng của năm sinh. Trong hàm sapxep có dùng tới hv.
+
+* Hàm: void vao(person *p); => Dùng để nhập dữ liệu cho một đối tượng kiểu person. Một chú ý quan trọng là: Nếu trong hàm vao ta dùng câu lệnh scanf("%f%*c",&h.bl); để nhập trực tiếp vào thành phần h.bl thì bị treo máy.
+
+* Hàm: void in(person p); => dùng để in một cấu trúc.
+
+* Cách thức làm việc chương trình như sau: Đầu tiên là phần nhập số liệu, rồi đến sắp xếp, sau đó sẽ in danh sách nhân viên đã sắp xếp. Cuối cùng đến các mục tìm kiếm theo hàm ptim hàm tim.
+
 
 
 <a name="danhsachlienket"></a>
