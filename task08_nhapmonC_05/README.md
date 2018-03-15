@@ -406,7 +406,7 @@ d[10] = {
 
 ###2.7 Phép gán cấu trúc:
 
-* Có thể thục hiện phép gán trên ác biến và phần tử mảng cấu trúc cùng kiểu như sau:</ul>
+* Có thể thục hiện phép gán trên ác biến và phần tử mảng cấu trúc cùng kiểu như sau:
 
 	Gán hai biết (cấu trúc) cho nhau.
 	Gán biến cho phần tử mảng (cấu trúc).
