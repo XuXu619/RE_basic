@@ -64,7 +64,7 @@ Một cách tổng quát, việc khai báo cấu trúc được thực hiện th
  - Sau đây là một vài điều cần lưu ý:
 <ul> 
 
- - Nhận xét 2.1: Các biến cấu trúc được khai báo theo mẫu trên sẽ được cấp phát bộ nhớ một cách đầy đủ cho tất cả các thành phàn của nó.<ul> 
+ - Nhận xét 2.1: Các biến cấu trúc được khai báo theo mẫu trên sẽ được cấp phát bộ nhớ một cách đầy đủ cho tất cả các thành phàn của nó.</ul> 
 
  - Nhận xét 2.2: Việc khai báo có thể thực hiện đồng thời với việc dịnh nghĩa kiểu cấu trúc. Muốn vậy chỉ cần đặt danh sách tên biến cấu trúc cần khai báo vào sau } cuối cùng trong mẫu 1.1</ul> 
 
