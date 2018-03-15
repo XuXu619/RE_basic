@@ -48,18 +48,18 @@
 Cho ta hai biến kiểu float với các tên là x và y. Ta cũng sẽ làm y hệt như vậy khi khai báo biến cấu trúc. Giả sử ta đã có ác kiểu cấu trúc ngay va nhan_cong như trong các ví dụ 1.1 và 1.2 khi đó ta có thể xét các ví dụ sau:
 
  - Ví dụ 2.1 : Khai báo</ul> 
-       `struct ngay ngay_di, ngay_den;`
+	struct ngay ngay_di, ngay_den;
 
 Sẽ cho ta hai biến cấu trúc với tên là ngay_di và ngay_den. Cả hai đều được xây dựng theo kiểu ngay.
 
  - Ví dụ 2.2 : Khai báo</l>
-        `struct nhan_cong, nguoi_a, nguoi_b;` 
+	struct nhan_cong, nguoi_a, nguoi_b;
 
 Sẽ cho ta hai cáu trúc với tên là nguoi_a và nguoi_b. Cả hai đều được xây dựng theo kieu nhan_cong
 
 Một cách tổng quát, việc khai báo cấu trúc được thực hiện theo mẫu:
 
-    `struct tên_kiểu_cấu_trúc danh_sách_tên_cấu_trúc;`
+	struct tên_kiểu_cấu_trúc danh_sách_tên_cấu_trúc;
 
  - Sau đây là một vài điều cần lưu ý:
 <ul> 
@@ -132,7 +132,7 @@ Mẫu 2.3 :
 * Chú ý: Nếu dùng typedef để định nghĩa kiểu cấu trúc, thì khi khai báo ta chỉ cần dùng tên kiểu (bỏ từ khoá struct). Ví dụ như kiểu cấu trúc ngay dược định như trong chú ý 1.1 của 2.1 thì các cấu trúc ngay_di và ngay_den trong ví dụ 2.1 có thể khai báo như sau: 
 
 
-`ngay ngay_di, ngay_den;`
+	ngay ngay_di, ngay_den;
 
 
  - Truy xuất các trường của cấu trúc
@@ -154,6 +154,7 @@ tên_cấu_trúc.tên cấu trúc.tên_cấu_trúc.tên_thành_phần
 * Câu lệnh: 
 
 	printf("%s",nguoi_a.ten);
+
 
 sẽ đưa tên của nguoi_a lên màn hình.
 
@@ -184,7 +185,7 @@ sẽ cho lên màn hình năm vào cơ qua của nguoi_b.
 </ul>
 
 
-`scanf("%d",&nguoi_b.ngay_vao_co_quan.nam);`
+	scanf("%d",&nguoi_b.ngay_vao_co_quan.nam);
 
 
 - Nhưng đối với các thành phần không nguyên , việc làm trên có thể dẫn đến treo máy. Ví vậy trước tiên nên nhập số liệu vào một biến trung gian, sau đó mới gán cho thành phần cấu trúc. Cách làm như sau:</ul> 
@@ -228,7 +229,7 @@ scanf("%d", &p.nam);
 * Ví dụ Khi viết: 
 
 
-```c int:8;
+```c int:8\;
 int:x;
 ``` 
 
@@ -438,9 +439,14 @@ for (j = i + 1; j <= n; ++j)
 
 * Truy xuất đơn giản 
 
-Biến cấu trúc: `<biến cấu trúc >.<biến thành phần>;`
+Biến cấu trúc: 
 
-biến con trỏ: `<biến con trỏ>a<biến thành phần>;`
+	<biến cấu trúc >.<biến thành phần>;
+
+
+biến con trỏ: 
+	
+	<biến con trỏ>a<biến thành phần>; 
 
 
 * Truy xuất phức tạp 
@@ -449,11 +455,12 @@ Sử dụng đối với các cấu trúc lồng nhau:
 
 * Cú pháp :
 
- `<biến cấu trúc>.<biến cấu trúc>.<biến thành phần>;`
+	<biến cấu trúc>.<biến cấu trúc>.<biến thành phần>;
 
 Hoặc
 
- `<biến cấu trúc >...<biến cấu trúc>.<biến thành phần>;`
+	<biến cấu trúc >...<biến cấu trúc>.<biến thành phần>;
+
 
 b. enum
 
