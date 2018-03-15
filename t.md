@@ -138,6 +138,301 @@ Mẫu 2.3 :
  - Truy xuất các trường của cấu trúc
 </ul> 
 
+- Mẫu 3.1: </li>
+
+```c tên_cấu_trúc.tên_thành_phần
+tên_cấu_trúc.tên_cấu_trúc.tên_thành_phần
+tên_cấu_trúc.tên cấu trúc.tên_cấu_trúc.tên_thành_phần
+...
+``` 
+
+- Các viết thứ nhất của mẫu 3.1 được sử dụng khi biến haowjc mảng là thnahf phần trực tiếp của một cấu trúc. Ví dụ biến ngay_thu, bién nam và mảng ten_thang là các thành phần trực tiếp của cấu trúc ngay_di (xem ví dụ 2.3). Mảng ten, mảng di_chi và biến bac_luong là các thành phần trực tiếp của cấu trúc nguoi_b (xem ví dụ 2.4). Các cách viết còn lại của mẫu 3.1 được sử dụng khi biến hoặc mảng là thành phần trực tiếp của một cauá tryúc mà bản thân cấu trúc này lại là thành phần của một cấu trúc lớn hơn. 
+</ul> 
+
+- Ví dụ 3.1 Ta xét vài phép toán trên các thành phần của cấu trúc nguoi_a và nguoi_b (xem ví dụ 2.4).</ul> 
+
+- Câu lệnh:</ul> 
+
+	printf("%s",nguoi_a.ten);
+
+sẽ đưa tên của nguoi_a lên màn hình.
+
+- Khi thực hiện câu lệnh:</ul>
+
+
+	s = nguoi_a.bac_luong + nguoi_b.bac_luong;
+
+
+Thì biến s sẽ nhận được tổng bậc lương của nguoi_a và nguoi_b;
+
+- Câu lệnh: </ul> 
+
+	printf("%d",nguoi_a.ngay_sinh.nam);
+
+sẽ cho lên màn hình năm sinh của nguoi_a.
+
+- Câu lệnh:</ul>
+
+
+	printf("%d",nguoi_b.ngay_vao_co_quan.nam);
+
+
+sẽ cho lên màn hình năm vào cơ qua của nguoi_b.
+
+
+- Chú ý 3.1 Có thể sử dụng phép toán lấy địa chỉ đối với thành phần cấu trúc để nhập số liệu trực tiếp vào thành phần cấu trúc. Ví dụ:
+</ul>
+
+
+`scanf("%d",&nguoi_b.ngay_vao_co_quan.nam);`
+
+
+- Nhưng đối với các thành phần không nguyên , việc làm trên có thể dẫn đến treo máy. Ví vậy trước tiên nên nhập số liệu vào một biến trung gian, sau đó mới gán cho thành phần cấu trúc. Cách làm như sau:</ul> 
+
+
+```c int x;
+scanf("%d",&x);
+nguoi_b.ngay_vao_co_quan.nam = x;
+``` 
+
+
+- Chú ý 3.2 Để tránh dài dòng khi làm việc với các thành phần cấu trúc ta có thẻ dùng lệnh #define. Ví dụ câu lệnh scanf trong chú ý trên có thể viết theo cách sau:
+</ul>
+
+```c #define p nguoi_b.ngay_vao_co_quan
+...
+scanf("%d", &p.nam);
+```
+
+###2.4 Thành phần kiểu FIELD (Nhóm BIT)
+
+- Các thành phần nguyên (unsigned hoặc signed) với miền giá trị nhỏ (như tuổi biến thiên từ 1 đến 100) có thể khai báo kiểu nhóm bit theo mẫu sau:</li>
+
+
+```c struct date
+{
+	int a:8;
+	int b:6;
+	int c:8;
+	int d:2;
+} x;
+```
+
+
+- Khi đó sizeof(struct date) = 3 (3 byte). Khi dùng kiểu field cần lưu ý các điểm sau:</ul>
+
+	Kiểu của field phải là int (unsigned haowjc signed).
+        Dộ dài của mỗi field không quá 16 bit.
+        Khi muốn bỏ qua một số bit thì ta bỏ trống tên trường.
+
+- Ví dụ Khi viết:<ul>
+
+
+```c int:8;
+int:x;
+``` 
+
+- Tức là bỏ qua 8 bit thấp, x chiếm 8 bit cao của một word.</li>
+
+        Không cho phép lấy địa chỉ thành phần kiểu field.
+        Không thể xây dựng các mảng kiểu field.
+        Không thể trả về từ hàm bằng một thành phần kiểu field.
+
+- Chẳng hạn không cho phép viết:</ul>
+
+        return x.d;
+
+mà phải dùng thủ thật sau:
+        int t = x.d;
+        return t;
+
+- Ứng dụng của nhóm bit: Nhóm bit thường được ứng dụng để:</ul>
+
+        Tiết kiệm bộ nhớ.
+        Dùng trong union để lấy ra các bit của một từ.
+
+- Ví dụ:</ul>
+
+
+```c union{
+struct{
+unsigned a1;
+unsigned a2;
+} s;
+struct{
+unsigned n1:1;
+unsigned:15;
+unsigned n2:1;
+unsigned:7;
+unsigned n3:8;
+} f;
+} u;
+
+- Khi đó:</li>
+
+        u.f.n1 là bit 0 ủa u.s.a1;
+        u.f.n2 là bit 0 của u.s.a2;
+        u.f.n3 là byte cao của u.s.a2;
+
+
+###2.5 Mảng cấu trúc:
+
+
+- Khi sử dụng một kiểu giá trị (kiểu int chẳng hạn) ta có thể khai báo các biến và các mảng kiểu int. Ví dụ khai báo:</ul>
+
+
+	int a,b,c[10]; 
+
+cho ta hai biến nguyên a, b và mảng nguyên c.
+
+- Hoàn toàn tương tự như vậy: Có thể sử dụng một kiểu cấu trúc đã mô tả để khai báo các cấu trúc và các mảng cấu trúc.</li>
+
+
+- Ví dụ 5.1 : Giả sử kiểu cấu trúc nhan_cong đã định nghĩa trong 2.2, khi đó khai báo</li>
+
+
+    `struct nha_cong nguoi_a, nguoi_b, to_1[10], to_2[20];`
+
+- Sẽ cho:</ul>
+
+        Hai biến mảng cấu trúc nguoi_a và nguoi_b;
+        Hai mảng cấu trúc to_1 và to_2;
+
+- Mảng to_1 có 10 phần tử và mảng to_2 có 20 phần tử. Mỗi phần tử của chúng là một cấu trúc kiểu nhan_cong.</ul>
+
+
+- Ví dụ 5.2 : Đoạn chương trình sau sẽ tính tổng lương của 10 nguoi ở to_1.</ul>
+
+
+```c double s=0;
+for (i=0; i<10;++i)
+	s+= to_1[i].bac_luong;
+```
+
+- Ghi chú: Không cho phép sử dụng phép toán lấy địa chỉ đối với các thành phần của mảng cấu trúc. Chảng hạn không cho phép viết:</ul>
+
+	&to_1[i].bac_luong (nếu kiểu của bac_luong là nguyen thì được);
+
+###2.6 Khởi đầu cho một cấu trúc
+
+- Có thể khởi đầu cho cấu trúc ngoài, cấu trúc tĩnh, mảng cấu trúc ngoài và mảng cấu trúc tĩnh bằng cách viết vào sau khai báo của chúng một danh sách các giá trị cho các thành phần.</ul>
+
+
+- Ví dụ 6.1 Đoạn chương trình</ul>
+
+
+```c struct date{
+	int day; int month;
+	int year;
+	int yearday;
+	char *month_name;
+};
+
+struct date dd = {4,7,1990,120,"December"};
+```
+
+
+- Xác định một cấu trúc (theo kiểu date) có tên là dd và khởi đầu cho các thành phần cảu nó. Như vậy: Nội dụng của dd.day là 4, của dd.month là 7, của dd.year là 1990, của dd.yearday là 120 và của dd.month_name là "December"</li>
+
+    Chú ý nếu month_name được khai báo kiểu ký tự như:
+    char moth_name[20]; thì các khởi đầu trên vẫn đúng.
+    Ví dụ 6.2 Đoạn chương trình
+
+```c struct month
+{
+	int number;
+	char* name;
+} year[12] = {
+		{1,"january"},
+		{2,"february"},
+		...
+		{12,"december"}
+};
+```
+
+- Xác định và khởi đầu một mảng cấu trúc có tên là year bao gồm 12 phần tử. Vì mỗi phần tử của mảng lại là một cấu trúc (kiểu month) nên để khởi đầu cho mảng year, một cách hợp lý hơn cả là sử dụng 12 bộ khởi đầu cho 12 cấu trúc tương ứng.</ul>
+
+
+- Chẳng hạn: {1,"january"} là bộ khởi đầu cho phần tử thứ nhất của mảng year.Cũng như đối với các mảng khác, khi khởi đầu một mảng cấu trúc ngoài (hoặc tĩnh) ta không cần chỉ ra kích cỡ của nó. Lúc đó kích cỡ của các mảng được khởi đầu sẽ được xác định một cách chính xác (khi dịch chương trình) thông qua số các bộ khởi đầu. Như vậy, đoạn chương trình trong ví dụ 6.2 có thể viết một cách khác như sau:</ul>
+
+
+```c struct month
+{
+	int number;
+	char* name;
+} year[] = {
+		{1,"january"},
+		{2,"febuary"},
+		...
+		{12,"december"}
+	};
+```
+
+Để xác định số phần tử của year ta có thể dùng toán tử sizeof theo cách sau:
+
+	int n = sizeof(year)/sizeof(struct month);
+
+- Nhận xét cuối cùng ở mục này là: Những gì đã nói về việc khởi đầu một mảng thông thường vẫn còn đúng đối với mảng cấu trúc, đó là:<ul>
+
+
+<li>Chỉ cho phép khởi đầu các cấu trúc và mảng cấu trúc ngoài (tĩnh). Chúng sẽ nhận giá trị 0 nếu không được khởi đầu.</li>
+
+<li>Nếu kích thước của mảng cấu trúc cần khởi đầu đã được khai báo là n thì số bộ khởi đầu (m) cần không vượt quá n. Mỗi bộ khởi đầu cho giá trị của một phần tử mảng cấu trúc. Khi m < n thì chỉ có m phần tử đầu của mảng được khởi đầu, (n - m) phần tử còn lại nhận giá trị 0.</li>
+
+<li>Vởiệc khi đầu được thực hiện một lần khi dịch chương trình:</li>
+
+
+- Ví dụ khi dịch đoạn chương trình</li>
+
+
+```c struct
+	{
+		float a;
+		int b;
+		char* c;
+	}
+d[10] = {
+			{7.1,5,"alpha"},
+			{-10.6,8,"beta"}	
+		};
+
+```
+
+- Chỉ hai phần tử đầu mảng cấu trúc d được khởi đầu. Trong ví dụ này n = 10 và m = 2;</ul>
+
+
+###2.7 Phép gán cấu trúc:
+
+- Có thể thục hiện phép gán trên ác biến và phần tử mảng cấu trúc cùng kiểu như sau:</ul>
+
+	Gán hai biết (cấu trúc) cho nhau.
+	Gán biến cho phần tử mảng (cấu trúc).
+	Gán phần tử mảng cho biến.
+	Gán hai phần tử mảng cho nhau.
+
+- Mỗi phép gán nói trên tương đương với một dãy phép gán các thành phần tương ứng.</UL>
+
+
+- Đoạn chương trình sau minh hoạ cách dùng phép gán cấu trúc để sắp xếp n thí sinh theo thứ tự giảm của tổng diểm.</Li>
+
+
+```c struct thi_sinh
+{
+	char ht[25]; /*họ tên*/
+	float td; /*tổng điểm*/
+} tg, ts[1000];
+int i, j, n;
+for (i = 1; i <= n - 1; ++i)
+for (j = i + 1; j <= n; ++j)
+	if (ts[i].td < ts[j].td)
+	{
+		tg = ts[i];
+		ts[i] = ts[j];
+		ts[j] = tg;
+	}
+```
+
+
  - Truy xuất đơn giản </li>
 
 Biến cấu trúc: `<biến cấu trúc >.<biến thành phần>;`
@@ -172,35 +467,8 @@ b. enum
 <li>Cú pháp: `enum<tên enum>{danh sách các biểu tượng hằng}`</li>
 
 
-<a name="cautruccontro"></a>
+<a name="danhsachlienket"></a>
 
-
-### 2. Cấu trúc con trỏ 
-
-Khai báo: `struct<tên cấu trúc>*<tên biến>`
-
-Truy cập các phần tử cấu trúc: dùng kí hiệu ->
-
-c. Định nghĩa kiểu mới bằng typedef
-
-Cú pháp: `Typedef<kiểu đã có><tên kiểu mới>`
-
-<a name="hamtrencautruc"></a>
-
-### 3. Hàm trên cấu trúc
-
-#### 3.1 Đối của hàm có thể là
-
-<li> Biến cấu trúc khi đó tham số thực tương ứng là một giá trị cấu trúc.</li>
-<li> COn trỏ cấu trúc, khhi đó tham số thực tuogw ứng là địa chỉ của biến cấu trúc. </li>
-<li> Mảng cấu trúc hình thức hoặc con trỏ cấu trúc. Khi đó tham số thực tương ứng là tên mảng cấu trúc</li>
-
-#### 3.2 Hàm có thể trả về các giá trị 
-
-<li> Giá trị cấu trúc </li>
-<li> Con trỏ cấu trúc </li>
-
-<a name="danhsachlienket">
 
 ### 4. Danh sách liên kết
 
