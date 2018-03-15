@@ -460,7 +460,7 @@ for (j = i + 1; j <= n; ++j)
 <a name="controcautruc">
 	
 
-###2. Con trỏ cấu trúc và địa chỉ cấu trúc
+### 2. Con trỏ cấu trúc
 
 
 
@@ -543,7 +543,7 @@ struct nhan_cong
 
 <a name="hamtrencautruc"> 
 
-###3. Hàm trên các cấu trúc:
+### 3. Hàm trên các cấu trúc
 
 * Đối của hàm có thể là:
 	Biến cấu trúc: Khi đó tham số thực tương ứng là một giá trị cấu trúc.
@@ -600,6 +600,7 @@ struct nhan_cong
 
 
 ### 5. Sử dụng cấp phát tĩnh và động 
+
 * Bộ nhớ cấp phát tĩnh là bộ nhớ được HĐH cấp phát cho tiến trình ngay khi khởi tạo nó. Kích thước cố định và biết trước.
 
 
