@@ -11,7 +11,7 @@
 
 [1. Kiểu cấu trúc struct, enum](#struct)
 
-	[1.1 Định nghĩa và khai báo](#dinhnghia) 
+	[1.1 Định nghĩa và khai báo](#dinhnghiavakhaibao)
 
 	[1.2 Khai báo theo một kiểu cấu trúc đã định nghĩa](#khaibao)
 
@@ -30,7 +30,7 @@
 [5. Sử dụng cấp phát tĩnh và động ](#capphat)
 
 
-<a name="kieucautrucstruct,enum"></a>
+<a name="kieucautrucstruct,enum"> 
 
 ### 1. Kiểu cấu trúc struct, enum 
 
@@ -456,8 +456,6 @@ for (j = i + 1; j <= n; ++j)
 ###2 Con trỏ cấu trúc và địa chỉ cấu trúc
 
 
-</ul>
-
 
 * Xét các kiểu cấu trúc ngay va nhan_cong;
 
@@ -535,9 +533,10 @@ struct nhan_cong
 
 * p = p + 10; p2 = p2 - 2; thì p trỏ tới ds[10] còn p2 trỏ tới ds[0].
 
+
 <a name="hamtrencautruc"> 
 
-####3 Hàm trên các cấu trúc:
+###3 Hàm trên các cấu trúc:
 
 * Đối của hàm có thể là:
 	Biến cấu trúc: Khi đó tham số thực tương ứng là một giá trị cấu trúc.
@@ -575,7 +574,7 @@ struct nhan_cong
 
 
 
-<a name="danhsachlienket"></a>
+<a name="danhsachlienket"> 
 
 
 ### 4. Danh sách liên kết
@@ -588,7 +587,7 @@ struct nhan_cong
 
 * Về cơ bản nó giống với danh sách liên kết đơn  chỉ khác là chỗ ở mỗi nút nó có thêm con trỏ prev để trỏ tới phần tử trước nó trong danh sách liên kết kép thay vif chỉ có mỗi next đối với danh sách liên kết đơn.
 
-<a name="sudungcapphattinhdong"></a>
+<a name="sudungcapphattinhdong"> 
 
 ### 5 Sử dụng cấp phát tĩnh và động 
 * Bộ nhớ cấp phát tĩnh là bộ nhớ được HĐH cấp phát cho tiến trình ngay khi khởi tạo nó. Kích thước cố định và biết trước.
