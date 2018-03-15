@@ -21,13 +21,13 @@
 
 	[1.5 Mảng cấu trúc]
 
-[2. Con trỏ cấu trúc ](#cautruccontro) 
+[2. Con trỏ cấu trúc ](#controcautruc)  
 
 [3. Hàm trên cấu trúc](#hamtrencautruc)
 
 [4. Danh sách liên kết ( 1 chiều, 2 chiều)](#danhsachlienket) 
 
-[5. Sử dụng cấp phát tĩnh động ](#capphattinhdong) 
+[5. Sử dụng cấp phát tĩnh động ](#sudungcapphattinhdong) 
 
 
 
