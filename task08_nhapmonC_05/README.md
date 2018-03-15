@@ -496,3 +496,18 @@ b. enum
 ### 5 Sử dụng cấp phát tĩnh và động 
 * Bộ nhớ cấp phát tĩnh là bộ nhớ được HĐH cấp phát cho tiến trình ngay khi khởi tạo nó. Kích thước cố định và biết trước.
 
+
+* Giả sử ta cần quản lý các viện. Mỗi viện có nhiều phòng và mỗi phòng có nhiều nhân viên. Khi thiết kế chương trình chúng ta chưa biết có bao nhiêu viện, chưa biết mỗi viện có bao nhiêu phòng và cũng chưa biết mỗi phòng có bao nhiêu nhân viên. Nếu sử dụng mảng (cấp phát bộ nhớ tĩnh), thì ta phải sử dụng số viện tối đa. Mỗi viện phải xem như có cùng một số phòng và mỗi phòng phải xem như có số nhân viên bằng nhau. Như vậy sẽ có rất nhiều vùng nhớ được cấp phát mà không bao giờ dùng đến. Chương trình dưới đây minh hoạ phương pháp cấp phát bộ nhớ động. Số viện sẽ đúng bằng số viện cần quản lý. Mỗi viện sẽ được cấp phát mọt vùng nhớ vừa đủ để chứa số phòng thực sự của nó và mỗi phòng cũng có một vùng nhớ ứng với số nhân viên hiện có của nó.
+
+
+* Giả sử ta cần quản lý các viện. Mỗi viện có nhiều phòng và mỗi phòng có nhiều nhân viên. Khi thiết kế chương trình chúng ta chưa biết có bao nhiêu viện, chưa biết mỗi viện có bao nhiêu phòng và cũng chưa biết mỗi phòng có bao nhiêu nhân viên. Nếu sử dụng mảng (cấp phát bộ nhớ tĩnh), thì ta phải sử dụng số viện tối đa. Mỗi viện phải xem như có cùng một số phòng và mỗi phòng phải xem như có số nhân viên bằng nhau. Như vậy sẽ có rất nhiều vùng nhớ được cấp phát mà không bao giờ dùng đến. Chương trình dưới đây minh hoạ phương pháp cấp phát bộ nhớ động. Số viện sẽ đúng bằng số viện cần quản lý. Mỗi viện sẽ được cấp phát mọt vùng nhớ vừa đủ để chứa số phòng thực sự của nó và mỗi phòng cũng có một vùng nhớ ứng với số nhân viên hiện có của nó.
+
+* Nhân viên được mô tả bằng cấu trúc person có 2 thành phần là ht(họ tên), và ns (năm sinh). Phòng được mô tả bởi cấu trúc ppp có 3 thành phần là tenphong (tên phòng), sonhanvien(số nhân viên trong phòng) và nhanvien (con trỏ kiểu person trỏ tới vùng nhớ chứa thông tin các nhân viên trong phòng). Viện được mô tả bằng cấu trúc vvv gồm 3 thành phần là tenvien (tên viện), sophong (số phòng của viện) và phong(con trỏ kiểu ppp trỏ tới vùng nhớ chứa thông tin của các phòng trong viện)
+
+* Chương trình gồm hai phần:
+
+  * Phần đầu gồm các thao tác nhập iệu và cấp phát bộ nhớ đặt xen kẽ nhau. Nhập kiệu để biến cần cấp phát bao nhiêu. Cấp phát để có vùng nhớ chứa thông tin nhập vào sau đó.
+  * Phần tiếp theo đơn giản chỉ là in ra màn hinh các thông tin vừa nhập vào.
+
+
+    
