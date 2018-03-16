@@ -2,36 +2,45 @@
 > Tham khảo: 
     http://bit.ly/2cxplkv
     http://bit.ly/2cxrr2B
->
+> 
 > Người thực hiện: Xu Xu
->
+> 
 > Cập nhật lần cuối: **26/02/2018**
->
+> 
 
 ### Mục lục
 [1. Markdown](#timhieu)
 
 [2. Các cú pháp thường gặp](#cuphap)
 
--	[2.1 Thẻ tiêu đề](#the)
+-	[2.1 Thẻ tiêu đề](#the) 
+
 -	[2.2 Chèn link, chèn ảnh](#chen)
+
 -	[2.3 Ký tự in đậm, in nghiêng]
+
 -	[2.4 Trích dẫn, bo chữ]
+
 -	[2.5 Gạch đầu dòng]
+
 -	[2.6 Tạo bảng]	
+
 -	[2.7 Liên kết với tài khoản github bằng SSH]
+
 [3. Cài đặt các công cụ hỗ trợ markdown](#congcuhotro)
 
 [4. Các công cụ hỗ trợ editor]
 
-<a name="markdownlagi"></a>
+<a name="markdownlagi">
+	
 
 ### 1. Markdown
 
 Markdown là ngôn ngữ được tạo ra vào nawm2004 bởi John Gruber với sự đóng góp đáng kể từ Aaron Swariz, với mục đích cho phép người viết sử dụng, dễ viết các định dạng căn bản dễ đọc và tùy chọn chuyển  nó thành các mã XHTML hợp lệ (hoặc HTML).
 
 
-<a name="caccuphapthuonggap"></a>
+<a name="caccuphapthuonggap">
+	
 
 ### 2. Các cú pháp thường gặp
 
@@ -131,7 +140,7 @@ Nhấn install để cài đặt.
 
 <img src=https://imgur.com/a/7V2sF>
 
-Tương tự!
+Tương tự! </ul> 
 
 ### 4 Các công cụ editor 
 
