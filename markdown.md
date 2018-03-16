@@ -94,7 +94,8 @@ dns-nameservers 8.8.8.8
 
 ```- Gạch đầu dòng thứ nhất
    </ul>
-   <li>Thụt với đầu dòng 1```
+   <li>Thụt với đầu dòng 1
+```
 
 
 #### 2.6 Tạo bảng
