@@ -24,9 +24,9 @@
 
 [2. Lưu trữ dữ liệu và tổ chức bộ nhớ](#luutrudulieu)
 
--	[2.1 Bộ nhớ chương trình]
+-	[2.1 Bộ nhớ chương trình](#bonho) 
 
--	[2.2 Các từ khóa thường dùng]
+-	[2.2 Các từ khóa thường dùng](#tukhoa) 
 
 
 <a name="thaotacvoifiletrongc">
