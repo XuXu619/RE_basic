@@ -10,17 +10,17 @@
 
 [1. Thao tác với File trong C](#thaotacvoifile)
 
--	[1.1 Mở File]
+-	[1.1 Mở File](#mofile)
 
--	[1.2 Đóng File]
+-	[1.2 Đóng File](#dòngile) 
 
--	[1.3 Ghi tới một File trong C]
+-	[1.3 Ghi tới một File trong C](#ghi)
 
--	[1.4 Đọc File trong C]
+-	[1.4 Đọc File trong C](#docfile)
+ 
+-	[1.5 Các hàm xuất nhập ngẫu nhiên](#ham)
 
--	[1.5 Các hàm xuất nhập ngẫu nhiên]
-
--	[1.6 Tổng kết các hàm tương tác với File]
+-	[1.6 Tổng kết các hàm tương tác với File](#all)
 
 [2. Lưu trữ dữ liệu và tổ chức bộ nhớ](#luutrudulieu)
 
