@@ -37,7 +37,6 @@
 [4. Tư duy và rèn luyện code của Xcross87](#tuduy) 
 
 <a name="Thuattoanquaylui">
-
 ###1. Thuật toán quay lui:
 
 * Thuật toán quay lui dùng để giải bài toán liệt kê các cấu hình. Mỗi cấu hình được xây dựng bằng cách xây dựng từng phần tử, mỗi phần tử được chọn bằng cách thử tất cả các khả năng. Giả sử cấu hình cần liệt kê có dạng x[1..n], khi đó thuật toán quay lui được thực hiện qua các bước:
@@ -467,8 +466,6 @@ int main()
 
 
 <a name="Thuattoanthamlam:">
-
-
 ###2. Thuật toán tham lam:
 
 
@@ -587,8 +584,6 @@ int main()
 
 
 <a name="quyhaochdong">
-
-
 ###3. Quy hoạch động
 
 * Các thuật toán đệ quy có ưu điểm dễ vài đặt, tuy nhiên do bản chất của quá trình đệ quy, các chương trình này thường kéo theo những đòi hỏi lớn về không gian bộ nhớ và một lượng tính toán khổng lồ.
@@ -1228,8 +1223,6 @@ int main()
 
 
 <a name="tuduyvarenluyen">
-
-
 ###4. Tư duy và rèn luyện code của Xcross87:
 
 * Cũng như tất cả các thứ khác, coding cũng là một quá trình làm việc có trình tự kiểu như một bài văn, cần có dàn bài xây dựng ý, tạo khung, và viết thử lấp đầy ý cho văn vẻ; cuối cũng chắp ghép lại cho hợp ý mình.
