@@ -22,17 +22,17 @@
 [3. Quy hoạch động](#quyhoachdong) 
 
 -	[3.1 Công thức truy hồi](#truyhoi) 
--	[3.1.1 Cải tiến thứ nhất](#caitien1) 
--	[3.1.2 Cải tiến thứ hai](#caitien2)
--	[3.1.3 Cải tiến đệ quy](#caitiendequy) 
+-		[3.1.1 Cải tiến thứ nhất](#caitien1) 
+-		[3.1.2 Cải tiến thứ hai](#caitien2)
+-		[3.1.3 Cải tiến đệ quy](#caitiendequy) 
 
 -        [3.2 Phương pháp quy hoạch động](#ppquyhoach) 
--        [3.2.1 Bài toán quy hoạch](#baitoanquyhoach) 
--        [3.2.2 Phương pháp quy hoạch](#pp)
+-        	[3.2.1 Bài toán quy hoạch](#baitoanquyhoach) 
+-        	[3.2.2 Phương pháp quy hoạch](#pp)
 
 -        [3.3 Một số bài toán quy hoạch động](#motsobaitoan) 
--	 [3.3.1 Dãy con đơn điệu tăng dài nhất](#daycon) 
--	[3.3.2 Bài toán cái túi](#btcaitui) 
+-		[3.3.1 Dãy con đơn điệu tăng dài nhất](#daycon) 
+-         	[3.3.2 Bài toán cái túi](#btcaitui) 
 
 [4. Tư duy và rèn luyện code của Xcross87](#tuduy) 
 
