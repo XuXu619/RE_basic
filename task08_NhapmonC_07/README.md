@@ -22,17 +22,17 @@
 [3. Quy hoạch động](#quyhoachdong) 
 
 -	[3.1 Công thức truy hồi](#truyhoi) 
--		[3.1.1 Cải tiến thứ nhất](#caitien1) 
--		[3.1.2 Cải tiến thứ hai](#caitien2)
--		[3.1.3 Cải tiến đệ quy](#caitiendequy) 
+-	[3.1.1 Cải tiến thứ nhất](#caitien1) 
+-	[3.1.2 Cải tiến thứ hai](#caitien2)
+-	[3.1.3 Cải tiến đệ quy](#caitiendequy) 
 
--        [3.2 Phương pháp quy hoạch động](#ppquyhoach) 
--        	[3.2.1 Bài toán quy hoạch](#baitoanquyhoach) 
--        	[3.2.2 Phương pháp quy hoạch](#pp)
+-	[3.2 Phương pháp quy hoạch động](#ppquyhoach) 
+-	[3.2.1 Bài toán quy hoạch](#baitoanquyhoach) 
+-	[3.2.2 Phương pháp quy hoạch](#pp)
 
--        [3.3 Một số bài toán quy hoạch động](#motsobaitoan) 
--		[3.3.1 Dãy con đơn điệu tăng dài nhất](#daycon) 
--         	[3.3.2 Bài toán cái túi](#btcaitui) 
+-	[3.3 Một số bài toán quy hoạch động](#motsobaitoan) 
+-	[3.3.1 Dãy con đơn điệu tăng dài nhất](#daycon) 
+-	[3.3.2 Bài toán cái túi](#btcaitui) 
 
 [4. Tư duy và rèn luyện code của Xcross87](#tuduy) 
 
@@ -465,7 +465,9 @@ int main()
 
 * Tên gọi thuật toán quay lui, đứng trên phương diện cài đặt có thể nen gọi là kỹ thuật vét cạn bằng quay lui thì chính xác hơn, tuy nhiên đứng trên phương diện bài toán, nếu như ta coi công việc giải bài toán bằng cách xét tất cả các khả năng cũng là 1 cách giải thì tên gọi thuật toán quay lui cũng không có gì trái logic. Xét hoạt động của chương trình tên cây tìm kiếm quay lui ta thấy tại bước thử chọn x[i] nó sẽ gọi đệ quy đẻ tìm tiếp x[i + 1] có nghĩa là quá trình sẽ duyệt tiến sâu xuống phía dưới đến tận nút lá, sau khi đã duyệt hết các nhánh, tiến trình lùi lại thử áp đặt một giá trị khác x[i], đó chính là nguồn gốc của tên gọi "thuật toán quay lui."
 
-<a name="Thuattoanthamlam">
+
+<a name="Thuattoanthamlam:">
+
 
 ###2. Thuật toán tham lam:
 
@@ -583,7 +585,9 @@ int main()
 }
 ```
 
+
 <a name="quyhaochdong">
+
 
 ###3. Quy hoạch động
 
@@ -1221,6 +1225,8 @@ int main()
 	Trace();
 }
 ```
+
+
 <a name="tuduyvarenluyen">
 
 
